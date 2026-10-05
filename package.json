@@ -6,13 +6,16 @@
   "description": "Simple Storage Solidity assignment with automated local tests",
   "scripts": {
     "compile": "hardhat compile",
-    "test": "hardhat run scripts/test.ts"
+    "test": "hardhat run scripts/test.ts",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia --build-profile production",
+    "verify:sepolia": "hardhat verify blockscout --network sepolia"
   },
   "engines": {
     "node": ">=22.10.0"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "4.2.0",
+    "@nomicfoundation/hardhat-verify": "3.1.2",
     "ethers": "6.17.0",
     "hardhat": "3.18.1",
     "typescript": "7.0.2"
