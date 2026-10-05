@@ -1,0 +1,20 @@
+{
+  "name": "simple-storage-contract",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Simple Storage Solidity assignment with automated local tests",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat run scripts/test.ts"
+  },
+  "engines": {
+    "node": ">=22.10.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "4.2.0",
+    "ethers": "6.17.0",
+    "hardhat": "3.18.1",
+    "typescript": "7.0.2"
+  }
+}
